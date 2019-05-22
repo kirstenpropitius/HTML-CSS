@@ -1,7 +1,7 @@
 /*Bronnen:
+Uitleg tijdens de lessen
 https://css-tricks.com/
 https://stackoverflow.com/
-https://codepen.io/ugbandula/pen/zGjBea
 https://codersblock.com/blog/creating-glow-effects-with-css/*/
 
 body {
@@ -294,9 +294,3 @@ p:nth-of-type(2) {
         stroke-dashoffset: 0;
     }
 }
-
-
-/*
-#oog2 svg:active {
-    opacity: 1;
-}*/
