@@ -1,3 +1,9 @@
+/*Bronnen:
+https://css-tricks.com/
+https://stackoverflow.com/
+https://codepen.io/ugbandula/pen/zGjBea
+https://codersblock.com/blog/creating-glow-effects-with-css/*/
+
 body {
     background-color: #28251D;
 }
@@ -15,18 +21,6 @@ body {
     margin-top: 430px;
     margin-left: 5%;
 }
-
-
-/*
-#oog2 svg:hover {
-    opacity: 0;
-}*/
-
-
-/*
-#oog2 svg:active {
-    opacity: 1;
-}*/
 
 #oog3 {
     width: 200px;
@@ -46,15 +40,64 @@ body {
     margin-left: 90%;
 }
 
+#oog1:hover,
+#oog2:hover,
+#oog3:hover,
+#oog5:hover,
+#oog6:hover {
+    animation: Schudden 8ms linear infinite;
+}
+
+@keyframes Schudden {
+    0% {
+        transform: translate(5px, 0);
+    }
+    50% {
+        transform: translate(-6px, 0);
+    }
+    100% {
+        transform: translate(3px, 0);
+    }
+}
+
 .driehoek {
     position: absolute;
     width: 200px;
-    margin-top: -20px;
+    margin-top: 150px;
     margin-left: 80%;
+    animation: invliegen 2s forwards;
+    transition: transform .8 ease;
+    /*    transition: transform .8 cubic-bezier(.38, .65, .44, 1.49);*/
+}
+
+@keyframes invliegen {
+    from {
+        transform: translateX(1000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.driehoek:hover {
+    box-shadow: inset 0 0 50px #28251D, inset 20px 0 80px #A63526, inset -20px 0 80px #C6B797, inset 20px 0 300px #A63526, inset -20px 0 300px #C6B797, 0 0 50px #28251D, -10px 0 80px #A63526, 10px 0 80px #C6B797;
+}
+
+.driehoek:active {
+    animation: draai 0.9s linear infinite;
+}
+
+@keyframes draai {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 #Lichaamklein {
-    height: 20px;
+    height: 0px;
     width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -63,213 +106,57 @@ body {
 p {
     text-align: left;
     position: absolute;
-    z-index: -10;
+    z-index: -9;
     color: white;
     font-size: 3em;
     margin-top: 220px;
     margin-left: 5%;
     width: 30%;
     font-family: 'Dancing Script', cursive;
+    transition: color 0.7s ease;
+    animation: fadeIn 12s forwards;
 }
 
-.tekst {
+p:nth-of-type(2) {
+    font-weight: 400;
     text-align: right;
     margin-left: 65%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Veranderen van de tekst kleur dmv toetsenbord*/
+
+.tekstkleur {
+    color: #A63526;
 }
 
 
 /*Animaties*/
 
-
-/*
-#oog1 {
-    opacity: 0;
-    animation-duration: 4s;
-    animation-name: Oog1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes Oog1 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-*/
-
 #oog1 {
     animation: bounce 6s infinite;
-}
-
-@keyframes bounce {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-    0%,
-    20%,
-    50%,
-    100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-40px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-    80% {
-        transform: translateY(-40px);
-    }
 }
 
 #oog2 {
     animation: bounce 5.9s infinite;
 }
 
-@keyframes bounce {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-    0%,
-    20%,
-    50%,
-    100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-40px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-    80% {
-        transform: translateY(-40px);
-    }
-}
-
-
-/*
-#oog2 {
-    opacity: 0;
-    animation-delay: 0.5s;
-    animation-duration: 4s;
-    animation-name: Oog2;
-    animation-fill-mode: forwards;
-}
-
-@keyframes Oog2 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-*/
-
 #oog6 {
     animation: bounce 6.4s infinite;
 }
 
-@keyframes bounce {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-    0%,
-    20%,
-    50%,
-    100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-40px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-    80% {
-        transform: translateY(-40px);
-    }
-}
-
-
-/*
-#oog6 {
-    opacity: 0;
-    animation-delay: 1s;
-    animation-duration: 4s;
-    animation-name: Oog6;
-    animation-fill-mode: forwards;
-}
-
-@keyframes Oog6 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-*/
-
 #oog5 {
     animation: bounce 6.75s infinite;
 }
-
-@keyframes bounce {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-    0%,
-    20%,
-    50%,
-    100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-40px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-    80% {
-        transform: translateY(-40px);
-    }
-}
-
-
-/*
-#oog5 {
-    opacity: 0;
-    animation-delay: 1.5s;
-    animation-duration: 4s;
-    animation-name: Oog5;
-    animation-fill-mode: forwards;
-}
-
-@keyframes Oog5 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-*/
 
 #oog3 {
     animation: bounce 8s infinite;
@@ -301,170 +188,115 @@ p {
     }
 }
 
-
-/*
-
-#oog3 {
-    opacity: 0;
-    position: absolute;
-    z-index: -3;
-    visibility: hidden;
-    animation-delay: 2s;
-    animation-duration: 4s;
-    animation-name: Oog3;
-    animation-fill-mode: forwards;
-}
-
-@keyframes Oog3 {
-    from {
+@media (min-width: 60em) {
+    /*Stand van de lijnen en de animatie ervan*/
+    .lijn1 {
+        transform: rotate(50deg);
+        position: absolute;
+        width: 645px;
+        margin-top: -90px;
+        margin-left: 250px;
         opacity: 0;
     }
-    to {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-*/
-
-.driehoek {
-    transition-timing-function: ease-in;
-    transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
-}
-
-
-/*
-@media (min-width: 36em) {
-    .lijn1 {
-        transform: rotate(190deg);
+    .lijn2 {
+        transform: rotate(5deg);
         position: absolute;
-        width: 500px;
-        margin-top: 100px;
-        margin-left: 90px;
+        width: 860px;
+        margin-top: -0px;
+        margin-left: 180px;
+        opacity: 0;
+    }
+    .lijn3 {
+        transform: rotate(20deg);
+        position: absolute;
+        width: 590px;
+        margin-top: 10px;
+        margin-left: 1020px;
+        opacity: 0;
+    }
+    .lijn4 {
+        transform: rotate(210deg);
+        width: 390px;
+        position: absolute;
+        margin-top: -110px;
+        margin-left: 820px;
+        opacity: 0;
+    }
+    .lijn5 {
+        transform: rotate(270deg);
+        position: absolute;
+        width: 200px;
+        margin-top: -60px;
+        margin-left: 400px;
+        opacity: 0;
+    }
+    .lijn-animatie {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: lijn 5s linear forwards;
     }
 }
 
-@media (max-width: 70em) {
+@media (max-width: 60em) {
     .lijn1 {
         transform: rotate(90deg);
         position: absolute;
         width: 345px;
         margin-top: 100px;
         margin-left: 90px;
+        opacity: 0;
+    }
+    .lijn2 {
+        transform: rotate(-20deg);
+        position: absolute;
+        width: 410px;
+        margin-top: 150px;
+        margin-left: 120px;
+        opacity: 0;
+    }
+    .lijn3 {
+        transform: rotate(180deg);
+        position: absolute;
+        width: 230px;
+        margin-top: 150px;
+        margin-left: 400px;
+        opacity: 0;
+    }
+    .lijn4 {
+        transform: rotate(210deg);
+        position: absolute;
+        width: 270px;
+        margin-top: -70px;
+        margin-left: 240px;
+        opacity: 0;
+    }
+    .lijn5 {
+        transform: rotate(270deg);
+        position: absolute;
+        width: 200px;
+        margin-top: -60px;
+        margin-left: 400px;
+        opacity: 0;
+    }
+    .lijn-animatie {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: lijn 5s linear forwards;
     }
 }
-*/
 
-.lijn1 {
-    transform: rotate(90deg);
-    position: absolute;
-    width: 345px;
-    margin-top: 100px;
-    margin-left: 90px;
-}
-
-.lijn1 {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: Lijn1 5s linear forwards;
-}
-
-@keyframes Lijn1 {
+@keyframes lijn {
     from {
         stroke-dashoffset: 1000;
     }
     to {
+        opacity: 1;
         stroke-dashoffset: 0;
     }
 }
 
-.lijn2 {
-    transform: rotate(-20deg);
-    position: absolute;
-    width: 410px;
-    margin-top: 150px;
-    margin-left: 120px;
-}
 
-.lijn2 {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: Lijn2 5s linear forwards;
-}
-
-@keyframes Lijn2 {
-    from {
-        stroke-dashoffset: 1000;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-.lijn3 {
-    transform: rotate(180deg);
-    position: absolute;
-    width: 230px;
-    margin-top: 150px;
-    margin-left: 400px;
-}
-
-.lijn3 {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: Lijn3 5s linear forwards;
-}
-
-@keyframes Lijn3 {
-    from {
-        stroke-dashoffset: 1000;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-.lijn4 {
-    transform: rotate(210deg);
-    position: absolute;
-    width: 270px;
-    margin-top: -70px;
-    margin-left: 240px;
-}
-
-.lijn4 {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: Lijn4 5s linear forwards;
-}
-
-@keyframes Lijn4 {
-    from {
-        stroke-dashoffset: 1000;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-.lijn5 {
-    transform: rotate(270deg);
-    position: absolute;
-    width: 200px;
-    margin-top: -60px;
-    margin-left: 400px;
-}
-
-.lijn5 {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: Lijn5 5s linear forwards;
-}
-
-@keyframes Lijn5 {
-    from {
-        stroke-dashoffset: 1000;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}
+/*
+#oog2 svg:active {
+    opacity: 1;
+}*/
