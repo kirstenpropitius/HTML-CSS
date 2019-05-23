@@ -238,16 +238,63 @@ p:nth-of-type(2) {
 }
 
 @media (max-width: 60em) {
-    #oog3 {
+    .lijn1 {
+        transform: rotate(90deg);
+        position: absolute;
+        width: 345px;
+        margin-top: 100px;
+        margin-left: 90px;
+        opacity: 0;
+    }
+    .lijn2 {
+        transform: rotate(-20deg);
+        position: absolute;
+        width: 410px;
+        margin-top: 150px;
+        margin-left: 120px;
+        opacity: 0;
+    }
+    .lijn3 {
+        transform: rotate(180deg);
+        position: absolute;
+        width: 230px;
+        margin-top: 150px;
+        margin-left: 400px;
+        opacity: 0;
+    }
+    .lijn4 {
+        transform: rotate(210deg);
+        position: absolute;
+        width: 270px;
+        margin-top: -70px;
+        margin-left: 240px;
+        opacity: 0;
+    }
+    .lijn5 {
+        transform: rotate(270deg);
+        position: absolute;
+        width: 200px;
+        margin-top: -60px;
+        margin-left: 400px;
+        opacity: 0;
+    }
+    .lijn-animatie {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: lijn 5s linear forwards;
+    }
+}
+
+@media (max-width: 30em) {
+    #oog1 {
         z-index: 4;
         width: 200px;
         margin-top: 14px;
-        margin-left: 75%;
     }
     #Lichaamklein {
         height: 0px;
         width: 500px;
-        margin-left: 0%;
+        margin-left: 10%;
         margin-right: auto;
     }
     #oog3 {
@@ -268,12 +315,12 @@ p:nth-of-type(2) {
     p:nth-of-type(2) {
         font-weight: 400;
         text-align: right;
-        margin-left: 110%;
+        margin-left: 120%;
     }
     .lijn1 {
         transform: rotate(90deg);
         position: absolute;
-        width: 255px;
+        width: 345px;
         margin-top: 100px;
         margin-left: 90px;
         opacity: 0;
@@ -281,24 +328,25 @@ p:nth-of-type(2) {
     .lijn2 {
         transform: rotate(-20deg);
         position: absolute;
-        width: 310px;
-        margin-top: 280px;
+        width: 410px;
+        margin-top: 150px;
         margin-left: 120px;
         opacity: 0;
     }
     .lijn3 {
         transform: rotate(180deg);
         position: absolute;
-        width: 190px;
-        margin-top: 190px;
-        margin-left: 315px;
+        width: 230px;
+        margin-top: 150px;
+        margin-left: 400px;
         opacity: 0;
     }
     .lijn4 {
         transform: rotate(210deg);
         position: absolute;
-        width: 90px;
-        margin-left: 290px;
+        width: 270px;
+        margin-top: -70px;
+        margin-left: 240px;
         opacity: 0;
     }
     .lijn5 {
@@ -306,7 +354,7 @@ p:nth-of-type(2) {
         position: absolute;
         width: 200px;
         margin-top: -60px;
-        margin-left: 320px;
+        margin-left: 400px;
         opacity: 0;
     }
     .lijn-animatie {
