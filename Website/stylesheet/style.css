@@ -189,6 +189,9 @@ p:nth-of-type(2) {
 
 @media (min-width: 60em) {
     /*Stand van de lijnen en de animatie ervan*/
+    #oog3 {
+        z-index: 4;
+    }
     .lijn1 {
         transform: rotate(50deg);
         position: absolute;
@@ -218,15 +221,15 @@ p:nth-of-type(2) {
         width: 390px;
         position: absolute;
         margin-top: -110px;
-        margin-left: 820px;
+        margin-left: 880px;
         opacity: 0;
     }
     .lijn5 {
-        transform: rotate(270deg);
+        transform: rotate(230deg);
         position: absolute;
-        width: 200px;
-        margin-top: -60px;
-        margin-left: 400px;
+        width: 500px;
+        margin-top: -190px;
+        margin-left: 940px;
         opacity: 0;
     }
     .lijn-animatie {
