@@ -4,11 +4,21 @@ var tekst = document.querySelector('p');
 var tekst2 = document.querySelector('.tekst');
 
 document.addEventListener('keypress',
-    function () {
-        tekst.classList.toggle('tekstkleur');
-        tekst2.classList.toggle('tekstkleur');
-    }
-)
+        function () {
+            tekst.classList.toggle('tekstkleur');
+            tekst2.classList.toggle('tekstkleur');
+        }
+    )
+    //Bij mobiele versie veranderd de keypress in een klik. De kleur van de tekst moet bij een klik veranderen.
+
+var kleur = document.querySelector('p');
+var kleur1 = document.querySelector('.tekst');
+
+kleur.addEventListener('click', function () {
+    console.log('hoi');
+    kleur.classList.toggle('tekstkleur2');
+    kleur1.classList.toggle('tekstkleur2');
+})
 
 //Wanneer je op een oog klikt komt de lijn langzaam te voorschijn. Wanneer je hier opnieuw op klikt verdwijnen de lijnen weer.
 

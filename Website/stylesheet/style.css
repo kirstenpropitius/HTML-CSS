@@ -102,40 +102,13 @@ body {
     margin-right: auto;
 }
 
-p {
-    text-align: left;
-    position: absolute;
-    z-index: -9;
-    color: white;
-    font-size: 3em;
-    margin-top: 220px;
-    margin-left: 5%;
-    width: 30%;
-    font-family: 'Dancing Script', cursive;
-    transition: color 0.7s ease;
-    animation: fadeIn 12s forwards;
-}
-
-p:nth-of-type(2) {
-    font-weight: 400;
-    text-align: right;
-    margin-left: 65%;
-}
-
-@keyframes fadeIn {
+*/ @keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
     }
-}
-
-
-/*Veranderen van de tekst kleur dmv toetsenbord*/
-
-.tekstkleur {
-    color: #A63526;
 }
 
 
@@ -188,6 +161,28 @@ p:nth-of-type(2) {
 }
 
 @media (min-width: 60em) {
+    /*Veranderen van de tekst kleur dmv toetsenbord*/
+    .tekstkleur {
+        color: #A63526;
+    }
+    p {
+        text-align: left;
+        position: absolute;
+        z-index: -9;
+        color: white;
+        font-size: 3em;
+        margin-top: 220px;
+        margin-left: 5%;
+        width: 30%;
+        font-family: 'Dancing Script', cursive;
+        transition: color 0.7s ease;
+        animation: fadeIn 12s forwards;
+    }
+    p:nth-of-type(2) {
+        font-weight: 400;
+        text-align: right;
+        margin-left: 65%;
+    }
     /*Stand van de lijnen en de animatie ervan*/
     #oog3 {
         z-index: 4;
@@ -239,7 +234,29 @@ p:nth-of-type(2) {
     }
 }
 
-@media (max-width: 60em) {
+@media (min-width: 30em) {
+    /*Veranderen van de tekst kleur dmv toetsenbord*/
+    .tekstkleur {
+        color: #A63526;
+    }
+    p {
+        text-align: left;
+        position: absolute;
+        z-index: -9;
+        color: white;
+        font-size: 3em;
+        margin-top: 220px;
+        margin-left: 5%;
+        width: 30%;
+        font-family: 'Dancing Script', cursive;
+        transition: color 0.7s ease;
+        animation: fadeIn 12s forwards;
+    }
+    p:nth-of-type(2) {
+        font-weight: 400;
+        text-align: right;
+        margin-left: 65%;
+    }
     .lijn1 {
         transform: rotate(90deg);
         position: absolute;
@@ -288,10 +305,38 @@ p:nth-of-type(2) {
 }
 
 @media (max-width: 30em) {
+    .tekstkleur2 {
+        color: #A63526;
+    }
+    p:first-of-type {
+        position: absolute;
+        color: white;
+        font-size: 4em;
+        margin-top: -150px;
+        margin-left: 5%;
+        width: 650px;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        transition: color 0.7s ease;
+        animation: fadeIn 12s forwards;
+    }
+    .tekst {
+        position: absolute;
+        z-index: -9;
+        color: white;
+        font-size: 4em;
+        margin-top: 700px;
+        margin-left: 5%;
+        width: 650px;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        transition: color 0.7s ease;
+        animation: fadeIn 12s forwards;
+    }
     .driehoek {
         position: absolute;
         width: 200px;
-        margin-top: 150px;
+        margin-top: 250px;
         margin-left: 120%;
         animation: invliegen 2s forwards;
         transition: transform .8 ease;
@@ -299,29 +344,25 @@ p:nth-of-type(2) {
     #Lichaamklein {
         height: 0px;
         width: 500px;
-        margin-left: 10%;
+        margin-top: 280px;
+        margin-left: 16%;
         margin-right: auto;
     }
     #oog3 {
         z-index: 4;
         width: 200px;
         margin-top: 14px;
-        margin-left: 105%;
+        margin-left: 129%;
     }
     #oog5 {
         width: 150px;
         margin-top: -30px;
-        margin-left: 110%;
+        margin-left: 120%;
     }
     #oog6 {
         width: 100px;
         margin-top: 160px;
-        margin-left: 130%;
-    }
-    p:nth-of-type(2) {
-        font-weight: 400;
-        text-align: right;
-        margin-left: 120%;
+        margin-left: 150%;
     }
     .lijn1 {
         transform: rotate(90deg);
@@ -344,7 +385,7 @@ p:nth-of-type(2) {
         position: absolute;
         width: 170px;
         margin-top: 190px;
-        margin-left: 340px;
+        margin-left: 440px;
         opacity: 0;
     }
     .lijn4 {
@@ -378,4 +419,8 @@ p:nth-of-type(2) {
         opacity: 1;
         stroke-dashoffset: 0;
     }
+}
+
+#Naamloos_verloop_84 {
+    color: blue;
 }
