@@ -102,7 +102,11 @@ body {
     margin-right: auto;
 }
 
-*/ @keyframes fadeIn {
+#Lichaamklein svg:hover {
+    fill: black;
+}
+
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -162,9 +166,6 @@ body {
 
 @media (min-width: 60em) {
     /*Veranderen van de tekst kleur dmv toetsenbord*/
-    .tekstkleur {
-        color: #A63526;
-    }
     p {
         text-align: left;
         position: absolute;
@@ -234,11 +235,8 @@ body {
     }
 }
 
-@media (min-width: 30em) {
+@media (min-width: 30em) and (max-width: 60em) {
     /*Veranderen van de tekst kleur dmv toetsenbord*/
-    .tekstkleur {
-        color: #A63526;
-    }
     p {
         text-align: left;
         position: absolute;
@@ -305,10 +303,7 @@ body {
 }
 
 @media (max-width: 30em) {
-    .tekstkleur2 {
-        color: #A63526;
-    }
-    p:first-of-type {
+    p {
         position: absolute;
         color: white;
         font-size: 4em;
@@ -421,6 +416,6 @@ body {
     }
 }
 
-#Naamloos_verloop_84 {
-    color: blue;
+.tekstkleur {
+    color: #A63526;
 }
