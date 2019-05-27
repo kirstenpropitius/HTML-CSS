@@ -95,6 +95,15 @@ body {
     }
 }
 
+.jasrechts {
+    fill: #b4882d;
+}
+
+.jas {
+    fill: #352d26;
+    /*    fill: #4a443b;*/
+}
+
 #Lichaamklein {
     height: 0px;
     width: 500px;
