@@ -95,25 +95,52 @@ body {
     }
 }
 
-.jasrechts {
+
+/*
+.jasrechts:hover {
+    fill: #b4882d;
+    transition: 0.6s;
+}
+*/
+
+
+/*
+.jas:hover {
+    fill: #352d26;
+    transition: 0.6s;
+}
+*/
+
+.jaskleur {
     fill: #b4882d;
 }
 
-.jas {
-    fill: #352d26;
-    /*    fill: #4a443b;*/
+.jaskleur1 {
+        fill: #352d26;
+}
+
+.brief:hover {
+    fill: white;
+    transition: 0.6s;
 }
 
 #Lichaamklein {
     height: 0px;
     width: 500px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
 
-#Lichaamklein svg:hover {
-    fill: black;
+
+/*
+#Lichaamklein {
+    position: absolute;
+    height: 600px;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
 }
+*/
 
 @keyframes fadeIn {
     from {
@@ -174,7 +201,6 @@ body {
 }
 
 @media (min-width: 60em) {
-    /*Veranderen van de tekst kleur dmv toetsenbord*/
     p {
         text-align: left;
         position: absolute;
@@ -191,7 +217,7 @@ body {
     p:nth-of-type(2) {
         font-weight: 400;
         text-align: right;
-        margin-left: 65%;
+        margin-left: 63%;
     }
     /*Stand van de lijnen en de animatie ervan*/
     #oog3 {
@@ -262,7 +288,7 @@ body {
     p:nth-of-type(2) {
         font-weight: 400;
         text-align: right;
-        margin-left: 65%;
+        margin-left: 64%;
     }
     .lijn1 {
         transform: rotate(90deg);

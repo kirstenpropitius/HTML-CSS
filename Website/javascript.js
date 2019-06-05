@@ -4,12 +4,25 @@ var tekst = document.querySelector('p');
 var tekst2 = document.querySelector('.tekst');
 
 document.addEventListener('keypress',
-        function () {
-            tekst.classList.toggle('tekstkleur');
-            tekst2.classList.toggle('tekstkleur');
-        }
-    )
-    //Bij mobiele versie veranderd de keypress in een klik. De kleur van de tekst moet bij een klik veranderen.
+    function () {
+        tekst.classList.toggle('tekstkleur');
+        tekst2.classList.toggle('tekstkleur');
+    }
+)
+
+
+var jas = document.querySelector('.jas');
+var jas2 = document.querySelector('.jasrechts');
+
+document.addEventListener('click',
+    function () {
+        jas.classList.toggle('jaskleur1');
+        jas2.classList.toggle('jaskleur');
+    }
+)
+
+
+//Bij mobiele versie veranderd de keypress in een klik. De kleur van de tekst moet bij een klik veranderen.
 var tekst = document.querySelector('p');
 var tekst2 = document.querySelector('.tekst');
 
@@ -38,9 +51,6 @@ var lijn3 = document.querySelector('.lijn5');
 var lijn5 = document.querySelector('.lijn4');
 var lijn6 = document.querySelector('.lijn3');
 
-//oog1.addEventListener('click', function () {
-//    lijn1.classList.add('lijn-animatie');
-//})
 oog1.addEventListener('click', function () {
     lijn1.classList.toggle('lijn-animatie');
 })
