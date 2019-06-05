@@ -10,14 +10,21 @@ document.addEventListener('keypress',
     }
 )
 
-
+//Wanneer je op de jas klikt, draaien de kleuren om.
 var jas = document.querySelector('.jas');
+var jas1 = document.querySelector('.jasrechts1');
 var jas2 = document.querySelector('.jasrechts');
+var jas3 = document.querySelector('.jas2');
+var jas4 = document.querySelector('.jas1');
+
 
 document.addEventListener('click',
     function () {
         jas.classList.toggle('jaskleur1');
+        jas1.classList.toggle('jaskleur');
         jas2.classList.toggle('jaskleur');
+        jas3.classList.toggle('jaskleur1');
+        jas4.classList.toggle('jaskleur1');
     }
 )
 
