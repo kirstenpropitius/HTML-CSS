@@ -28,7 +28,6 @@ document.addEventListener('click',
     }
 )
 
-
 //Bij mobiele versie veranderd de keypress in een klik. De kleur van de tekst moet bij een klik veranderen.
 var tekst = document.querySelector('p');
 var tekst2 = document.querySelector('.tekst');
