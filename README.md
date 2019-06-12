@@ -2,7 +2,7 @@
 
 Voor deze opdracht heb ik deze poster gekozen:
 
-De poster gaat over de black-out in de periode van de tweede wereld oorlog in de UK. De black out begon 2 dagen voor dat de tweede oorlog begon. Tijdens de oorlog moest iedereen voor zonsondergang zijn deuren en ramen verduisteren met gordijnen of zwart karton. Dit was zodat er geen licht kon ontsnappen en de vijand hen zou zien en bombarderen. Ook de straatlichten waren uit. Hierdoor gebeurde er erg veel ongelukken in het verkeer. Om zonder licht toch op te vallen werden er witte strepen op de grond geverfd. Om gezien te worden in het donker moest je dus iets wits aan hebben of meedragen.
+De poster gaat over de black-out in de periode van de tweede wereld oorlog in de UK. De black-out begon 2 dagen voor dat de tweede oorlog begon. Tijdens de oorlog moest iedereen voor zonsondergang zijn deuren en ramen verduisteren met gordijnen of zwart karton. Dit was zodat er geen licht kon ontsnappen en de vijand hen zou zien en bombarderen. Ook de straatlichten waren uit. Hierdoor gebeurde er erg veel ongelukken op straat. Om zonder licht toch op te vallen werden er witte strepen op de grond geverfd. Om gezien te worden in het donker moest je dus iets wits aan hebben of meedragen.
 
 Voor ik begon met deze les had ik twee jaar niet meer gecodeerd. 
 Dit vak was een hele uitdaging, maar (bijna) alles is gelukt.
