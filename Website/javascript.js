@@ -17,6 +17,10 @@ var jas2 = document.querySelector('.jasrechts');
 var jas3 = document.querySelector('.jas2');
 var jas4 = document.querySelector('.jas1');
 
+//jas.addEventListener('click', function () {
+//    jas.classList.toggle('jaskleur1');
+//
+//})
 
 document.addEventListener('click',
     function () {
